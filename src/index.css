@@ -1,0 +1,159 @@
+/* Global Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Element Styles */
+
+:root {
+  /* Font Setup */
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light dark;
+  /* Light Mode Colors */
+  --primary: #96cdee;
+  --primary--hover: #afdefc;
+  --secondary: #ffe0bc;
+  --secondary--hover: #fdebd7;
+  --light: #ffffff;
+  --grey: #cccccc;
+  --primary--light: #c0d6e2;
+  --background-color: #ffffff;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --border-radius: 0.5em;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow--hover: rgba(149, 157, 165, 0.2) 0px 8px 40px;
+  --max-form-width: 70em;
+  --min-section-height: 40em;
+  --max-section-width: 120em;
+}
+
+/* Dark Mode Styles */
+
+[data-theme="dark"] {
+  --primary: #4a90d9;
+  --primary--hover: #6aaddc;
+  --secondary: #b3866a;
+  --secondary--hover: #c49c76;
+  --light: #242424;
+  --grey: #777777;
+  --primary--light: #7a9db6;
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+}
+
+/* Base Body Styles */
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+/* Responsive Font Sizes */
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+/* Heading Styles */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  /* 40px */
+}
+
+h2 {
+  font-size: 2rem;
+  /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem;
+  /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem;
+  /* 24px */
+}
+
+/* Paragraph Styles */
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+/* Margin Utility Classes */
+
+.small-margin-top {
+  margin-top: 8px;
+}
+
+.small-margin-bottom {
+  margin-bottom: 8px;
+}
+
+.medium-margin-top {
+  margin-top: 16px;
+}
+
+.medium-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.large-margin-top {
+  margin-top: 24px;
+}
+
+.large-margin-bottom {
+  margin-bottom: 24px;
+}
+
+.extra-large-margin-top {
+  margin-top: 48px;
+}
+
+.extra-large-margin-bottom {
+  margin-bottom: 48px;
+}
+
+/* Section Styles */
+
+section {
+  min-height: var(--min-section-height);
+}

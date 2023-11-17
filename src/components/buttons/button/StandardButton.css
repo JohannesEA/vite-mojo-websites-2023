@@ -1,0 +1,53 @@
+.standard-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--primary);
+  /* Default background */
+  color: var(--text-color);
+  /* Default text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.standard-button.accent-gold {
+  background-color: var(--primary);
+  /* Using primary color for accent gold */
+  color: var(--text-color);
+}
+
+.standard-button.dark-bg {
+  background-color: var(--light);
+  /* Light text on dark background */
+  color: var(--background-color);
+  /* Dark background color for text */
+}
+
+.standard-button.light-bg {
+  background-color: var(--background-color);
+  /* Light background */
+  color: var(--text-color);
+  /* Dark text on light background */
+}
+
+.standard-button.hover-blue {
+  background-color: var(--primary--hover);
+  /* Hover state color */
+  color: var(--text-color);
+}
+
+.standard-button.button-bg {
+  background-color: var(--secondary);
+  /* Secondary color for button background */
+  color: var(--text-color);
+}
+
+.standard-button:hover {
+  transform: translateY(-3px);
+  /* Slight upward lift */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow for depth */
+}
