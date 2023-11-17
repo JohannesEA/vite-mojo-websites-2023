@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./HeroSection.css";
+import "./Herosection.css";
 import StandardButton from "../../../components/buttons/button/StandardButton";
 
 const HeroSection = () => {
